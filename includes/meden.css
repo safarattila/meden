@@ -593,6 +593,8 @@ h2 {text-align:center; text-transform: uppercase; font-size: 21px; color:var(--t
 	 .productpage h1, .onp {text-align:center; max-width:calc(100% - 140px); position:relative;line-height: 1.1;	display:inline-block; text-transform: uppercase; font-size: 21px; color:white; padding:16px 24px;
 		border-radius: 6px; border:1px solid white; width:auto; font-weight:500;  margin:auto; margin-bottom:40px/*52px;*/}
 
+		.productpage h1 {margin-bottom:52px;}
+
 	/*	.productpage h1:after, .onp:after {
 			content: "◀";
 			font-size:24px;
