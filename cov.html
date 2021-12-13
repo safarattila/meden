@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="hu">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" type="image/jpg" href="img/meden_favicon_1.png"/>
+      <title>Medentrade Kft.</title>
+      <meta name="description" content="GE Healthcare ultrahang diagnosztikai készülékek"/>
+      <link rel="stylesheet" href="includes/meden-plus.css">
+ 
+   </head>
+   <body>
+      <nav>
+         <div class="mobile-menu">
+            <img src="img/logo.png" alt="Meden logó" class="main-mobile-logo">
+            <div class="menu-icon" onclick="openNav()">
+               <div id="nav-icon1">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+            </div>
+         </div>
+         <div id="mySidenav" class="sidenav notrans">
+            <a href="#" class="animated navlink noselect" onclick="closeNav()">Főoldal</a>
+            <a href="#termekek" class="animated-3 navlink noselect" onclick="closeNav()">Termékek</a>
+            <a href="#rolunk" class="animated-4 navlink noselect" onclick="closeNav()">Rólunk</a>
+            <a href="#partnereink" class="animated-5 navlink noselect" onclick="closeNav()">Partnereink</a>
+            <a href="#kapcsolat" class="animated-6 navlink noselect" onclick="closeNav()">Kapcsolat</a>
+            <a href="/szerviz" class="animated-7 navlink noselect">Szerviz</a>
+            <a href="/uzenet" class="animated-8 navlink noselect">Üzenet</a>
+         </div>
+      </nav>
+      <div class="whiteline">
+         <a href="tel:+3623880858"> <img src="img/telefon_feher.svg" alt="telefon ikon" class="top-phone-icon grw"><span class="phonetext">+36 23 880 858</span></a>
+         <a href="mailto: info@medentrade.hu" class="wuwu"> <img src="img/email_feher.svg" alt="email-ikon" class="top-email-icon grw"><span>
+         info@medentrade.hu</span></a>
+         <a href="https://www.facebook.com/medentradekft"> <img src="img/facebook.svg" alt="Facebook ikon" class="top-fb-icon gru"></a>
+      </div>
+      <nav class="bluenav">
+         <div class="pc-menu">
+            <a href=""><img src="img/logo.png" alt="Meden logó" class="main-pc-logo"></a> 
+            <div class="meden-pc-menu">
+               <a href="#">Főoldal</a>
+               <a href="#termekek">Termékek</a>
+               <a href="#rolunk">Rólunk</a>
+               <a href="#partnereink">Partnereink</a>
+               <a href="#kapcsolat">Kapcsolat</a>
+               <a href="#partnereink" class="spec-menu-item frspec">Szerviz</a>
+               <a href="#kapcsolat" class="spec-menu-item">Üzenet</a>
+            </div>
+         </div>
+      </nav>
+      <style>
+        .vitality {
+            width: 100%;
+            height: 400px;
+            max-width: 410px;
+            margin: auto;
+            background-image: url(img/vivalytic.png);
+            background-size: cover;
+            background-position: center;
+         }
+
+         .one-vitality-product-img {
+            display: none;
+         }
+
+         .one-product-back {
+            padding-bottom: 10px;
+         }
+
+         .expl {
+            display: block;
+            color: #fff;
+         }
+
+         .mobile-menu {
+            background-color: #005046;
+         }
+
+         .vitline {
+            margin-top: 0;
+            background-color: white;
+            width: 100%;
+            padding-bottom: 48px;
+            padding-top: 48px;
+         }
+
+         .viva-span {
+            text-align: center;
+            display: block;
+         }
+
+         .vitline-inside {
+            width: 100%;
+            height: 2px;
+            background-color: var(--medenblue);
+         }
+
+         h3 {
+            font-size: 26px;
+            margin: auto;
+            font-family: var(--gilsansbold);
+            font-weight: bold;
+            color: rgb(60, 160, 210);
+            text-align: center;
+            margin-bottom: 10px;
+         }
+
+         .pic-vit-holder {
+            text-align: center;
+            margin-top: 30px;
+         }
+
+         .pic-vit-holder img {
+            display: block;
+            margin-bottom: 18px;
+         }
+
+         .strange-number {
+            margin-left: -12px;
+         }
+
+         .one-product-page {
+            background: white;
+         }
+
+         @media screen and (min-width: 600px) {
+            .pic-vit-holder {
+               display: grid;
+               grid-template-columns: 1fr 1fr;
+               padding-bottom: 18px;
+               padding-top: 30px;
+               width: 480px;
+               margin: auto;
+            }
+         }
+
+         @media screen and (min-width: 1023px) {
+            .one-product-page {
+               background-color: #005046;
+            }
+            .pc-menu,
+            .bluenav {
+               background: #005046;
+            }
+            .vitality {
+               display: none;
+            }
+            .one-vitality-product-img {
+               display: block;
+               position: absolute;
+               top: /*-213px*/
+               -184px;
+               left: -130px;
+               width: 765px;
+               z-index: 0;
+            }
+            .pc-menu,
+            .prod-desc,
+            .onp {
+               z-index: 1;
+               position: relative;
+            }
+            .white-viva {
+               background: rgba(255, 255, 255, .92);
+               display: block;
+               padding-top: 48px;
+               margin-top: 48px;
+               border-radius: 6px;
+               padding-left: 26px;
+               padding-right: 26px;
+               margin-left: -26px;
+               margin-right: -26px;
+            }
+            .white-viva li:before {
+               border: 1px solid rgba(1, 8, 51, .51);
+            }
+            .white-viva li,
+            .white-viva p,
+            .white-viva span {
+               color: var(--textblue);
+            }
+            .white-viva span {
+               font-size: 14px;
+               font-weight: 500;
+            }
+            .vitline {
+               display: none;
+            }
+            .expl {
+               display: none;
+            }
+            .pic-vit-holder {
+               display: grid;
+               grid-template-columns: 1fr 1fr;
+               padding-bottom: 48px;
+               padding-top: 30px;
+               width: 480px;
+               margin: auto;
+            }
+            .ul-67 {
+               font-weight: 500!important;
+            }
+            .one-grid-container {
+               position: relative;
+            }
+         }
+
+         @media screen and (min-width: 1090px) {
+            .one-vitality-product-img {
+               left: -174px
+            }
+         }
+
+         @media screen and (min-width: 1800px) {
+            .one-grid-container {
+               grid-template-columns: 466px 1fr;
+               grid-gap: 0;
+               grid-column-gap: 0;
+            }
+            .one-vitality-product-img {
+               left: -190px;
+            }
+            .white-viva {
+               margin-top: 90px;
+            }
+         }
+      </style>
+      <section class="one-product-page" style="background-image:none;">
+         <a href="#" class="pconp">
+            <h1 class="onp">Vitalitic Cov</h1>
+         </a>
+         <div class="one-grid-container">
+            <div class="one-product-back" style="background-image:none; background-color:#005046">
+               <a href="#" class="mobonp">
+                  <h1 class="onp">Vitalitic Cov</h1>
+               </a>
+               <span class="expl">SARS-CoV-2 Vírus Tesztelés</span>
+               <div class="vitality"></div>
+               <img src="img/vivalytic.png" alt="" class="one-vitality-product-img"></img>
+            </div>
+            <div class="prod-desc pad">
+               <p> A Vivalytic CoV egy gyorsteszt, ami képes a SARS-CoV-2 nukleinsavainak kimutatására, a Bosch Healthcare és a Randox közös fejlesztésének köszönhetően egyszerű és precíz eredményt kaphatunk, időben közvetlenül az ellátás helyén.</p>
+               <p>
+                  A Vivalytic-en elérhető CoV tesztpatron mind a SARS-CoV-2-re specifikus ORFIlab-gént, mind a Sarbecovírus-ra specifikus E-gént (megerősítő cél) detektálja, hogy jelentse a SARS-Cov-2 pozitív betegmintákat.
+               </p>
+               <p><b>Detektálási módszer:</b> Randox Biochip technológia (végpont PCR)</p>
+               <p><b>Eredményidő:</b> 2,5 óra</p>
+               <p><b>A minta térfogata:</b> 300µl klinikai minta</p>
+               <p><b>Minta típusa:</b> orr- vagy orrgarat-tampon</p>
+               <p><b>Vírusok:</b></p>
+               <li>SARS-CoV-2 (COVID-19)</li>
+               <li>Sarbecovirus (SARS, SARS like, SARS-CoV-2)</li>
+               <div class="vitline">
+                  <div class="vitline-inside"></div>
+               </div>
+               <span class="white-viva">
+                  <h3>VIVALYTIC CoV</h3>
+                  <span class="viva-span">Patron alapú tesztelő platform</span>
+                  <p class="ul-67">Az új SARS-CoV-2 tesztet a Randox Laboratories a Bosch Vivalytic készülékén futtatja. A Vivalytic rendszer teljesen automatizált, patron alapú platform, amely képes Hi-Plex és Lo-Plex fertőző betegségek vizsgálatára is. Minden könnyen használható patron tartalmazza az összes szükséges reagenst, teljesn lezárva a kockázat minimalizálása érdekében, illetve kényelmesen tárolható szobahőmérsékleten.</p>
+                  <p><b>A Vivalytic főbb jellemzői:</b></p>
+                  <li>Patron alapú platform</li>
+                  <li>Teljesen automatizált</li>
+                  <li>Nem laboratóriumi és laboratóriumi beállításokra egyaránt alkalmas</li>
+                  <li>Kis alapterületű eszköz</li>
+                  <li>Gyors fordulat a minta bevitelétől az eredményekig</li>
+                  <li>Önálló vagy moduláris kivitelben, akár 8 platformmal a Vivalytic Up segítségével</li>
+                  <p><b>A Vivalytic munkafolyamat 4 egyszerű lépésben:</b></p>
+                  <div class="pic-vit-holder">
+                     <img src="img/one.png" alt="Minta szkennelés"><img src="img/two.png" alt="Kazetta szkennelés">
+                     <img src="img/3.png" class="strange-number" alt="Minta behelyezés"><img src="img/four.png" alt="PCR detektálás">
+                  </div>
+                  <div class="vitline" style="padding-bottom:0;">
+                     <div class="vitline-inside"></div>
+                  </div>
+               </span>
+            </div>
+         </div>
+      </section>
+      <footer class="contact pad" id="kapcsolat">
+         <h2>Kapcsolat</h2>
+         <a href="tel:+3623880858" class="btm phonebottompc"> <img src="img/telefon_feher.svg" alt="telefon ikon" class="phone-icon gruj-5"> +36 23 880 858</a>
+         <a href = "mailto: info@medentrade.hu" class="btm emailbottompc"> <img src="img/email_feher.svg" alt="email-ikon" class="email-icon gruj-5"> info@medentrade.hu</a>
+         <a class="btm mobface" href="https://www.facebook.com/medentradekft"> <img src="img/facebook.svg" alt="Facebook ikon" class="fb-icon">facebook.com/medentradekft</a>
+         <p class="btm">2040 Budaörs, Gyár utca 2. (BITEP - Budaörsi Ipari és Technológiai Park)</p>
+         <p class="btmplus">2400 Dunaújváros, Petőfi Sándor utca 63.</p>
+         <!--   <div class="img-conatiner"><a href="/"><img src="img/mdnlogo.png" alt="Meden logó" class="mdnlog"></a></div>-->
+         <a href="https://www.facebook.com/medentradekft"> <img src="img/facebook.svg" alt="Facebook ikon" class="fb-icon-desktop-only"></a>
+      </footer>
+      <script>
+         function openNav() {
+         const navLinks = document.querySelectorAll('.navlink');
+         const navIcon = document.querySelector("#nav-icon1");
+         const mySidenav = document.querySelector("#mySidenav");
+         navIcon.classList.toggle("open");
+         mySidenav.classList.toggle("open-sidemenu");
+         navLinks.forEach(element => {
+         element.classList.toggle('fadeInDown')
+         });
+         }
+         
+         function closeNav() {
+         const navLinks = document.querySelectorAll('.navlink');
+         const navIcon = document.querySelector("#nav-icon1");
+         const mySidenav = document.querySelector("#mySidenav");
+         navIcon.classList.remove("open");
+         mySidenav.classList.remove("open-sidemenu");
+         navLinks.forEach(element => {
+         element.classList.remove('fadeInDown')
+         });
+         }
+         
+         window.onload = function() {
+         allowTransition();
+         };
+         
+         function allowTransition() {
+         const side = document.querySelector('.sidenav');
+         side.classList.remove('notrans');
+         }
+         
+         
+      </script>
+   </body>
+</html>
